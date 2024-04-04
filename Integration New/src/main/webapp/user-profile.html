@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Bank Management System - Profile</title>
+<style>
+	
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.profile-info-container {
+  margin-bottom: 20px;
+}
+
+.profile-info-container h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-info-container ul li {
+  margin-bottom: 5px;
+}
+
+.profile-actions {
+  text-align: center;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-actions button:hover {
+  background-color: #0056b3;
+}
+	
+</style>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>User Profile</h1>
+    <div class="profile-info-container">
+      <h2>Personal Information</h2>
+      <ul>
+        <li><strong>Name:</strong> <span id="lgmail"></span></li>
+        <li><strong>Date of Birth:</strong> 01/01/1980</li>
+        <li><strong>Blood Group:</strong> A+</li>
+        <li><strong>Gender:</strong> Male</li>
+        <li><strong>Contact Number:</strong> 123-456-7890</li>
+        <li><strong>Email Address:</strong> johndoe@example.com</li>
+        <li><strong>Address:</strong> 123 Main St, City, State, ZIP</li>
+      </ul>
+    </div>
+    <div class="profile-actions">
+      <button>Edit Profile</button>
+      <button>Change Password</button>
+    </div>
+  </div>
+  <script>
+document.getElementById("lgmail").innerText = localStorage.getItem("email");
+</script>
+</body>
+</html>
